@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>CHECK BALANCE PAGE</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<style>
+ body {
+           
+     background-image: url('backbg.png');
+         
+        }
+ header {
+ 	color:#000000;
+ 	font-family:Bold;
+ 	font-size:30px;
+ }
+ .container{
+ 	 width: 550px;
+     height: 350px; 
+     background-image: url('login.jpg');
+     background-size: cover;
+     background-position: center;
+     color: white;
+     text-align: center;
+     padding: 20px;
+     border-radius: 10px;
+     margin: auto;
+     backdrop-filter: blur(5px);
+ 
+ }
+  .container form,.container div,.container label,.container input{
+    color:#000000;
+ 	font-family:Bold;
+ 	font-size:18px;
+	display: flex;
+  	flex-direction: column;
+    align-items: center;
+  }
+ 
+
+</style>
+<header>
+    	<center><img src="bank.png" width="150px" height="150px"></center>
+    	<center><h1>WELCOME TO BANK</h1></center>
+    	
+    	
+    </header>
+   
+
+<body>
+		
+<div class="container">
+		<form action="check" method="get">
+		<div>
+			<label>BALANCE ENQUIRY</label>
+		</div>
+		<div>
+			<label for="accountNumber">Enter Account Number:</label>
+            <input type="text" name="accountNumber" class="form-control" required><br>
+		</div>
+		<div class="form-group">
+				<input type="submit" value="CHECK BALANCE" class="btn btn-primary"><br>
+        </div>
+  		 <div class="form-group">
+  		 		<input type="button" value="BACK" class="btn btn-primary" onclick="redirectToHomePage()">
+        </div>
+		</form>
+    </div>
+
+    <script>
+        function redirectToHomePage() {
+      
+            window.location.href = "index.html";
+        }
+    </script>
+</div>
+</body>
+</html>
